@@ -256,8 +256,8 @@ img{
         }
     }
 }
-/* ===== SKILLS =====*/
-.skills{
+/* ===== EXPERIENCE =====*/
+.experience{
     &__container{
         row-gap: 2rem;
     }
@@ -472,7 +472,7 @@ img{
             }
         }
     }
-    .skills{
+    .experience{
         &__container{
             grid-template-columns: repeat(2,1fr);
             align-items: center;
