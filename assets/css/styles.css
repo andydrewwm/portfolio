@@ -314,6 +314,7 @@ img{
 }
 .portfolio__link-name{
     color: var(--dark-color);
+    padding: 10px;
 }
 
 /* ===== CONTACT =====*/
