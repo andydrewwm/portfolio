@@ -18,14 +18,14 @@
 /*===== Fuente y tipografia =====*/
 :root{
     --body-font: 'Montserrat', sans-serif;
-    --big-font-size: 2.5rem;
+    --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
 }
 @media screen and (min-width: 768px){
     :root{
-        --big-font-size: 5rem;
+        --big-font-size: 4.5rem;
         --h2-font-size: 2rem;
         --normal-font-size: 1rem;
         --small-font-size: .875rem;
@@ -80,13 +80,13 @@ img{
 
 /*===== CLASS CSS ===== */
 .section{
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 .section-title{
     position: relative;
     font-size: var(--h2-font-size);
     color: var(--dark-color);
-    margin: var(--mb-4) 0;
+    margin: var(--mb-2) 0;
     text-align: center;
 }
 .section-title::after{
@@ -193,6 +193,7 @@ img{
 }
 .home__title span{
     text-shadow: 0 20px 25px rgba(0,0,0,.5);
+    line-height: 1.2;
 }
 .home__scroll{
     align-self: flex-end;
@@ -206,7 +207,7 @@ img{
 .home__img{
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: var(--mb-2);
     width: 295px;
     border: 5px solid white;
     border-radius: 50%;
@@ -229,20 +230,17 @@ img{
     border-radius: 50%;
     overflow: hidden;
 }
-/* .about__img img{
-    width: 100px;
-} */
 .about__subtitle{
     font-size: var(--h2-font-size);
     color: var(--first-color);
     margin-bottom: var(--mb-1);
 }
 .about__text{
-    margin-bottom: var(--mb-4);
+    margin-bottom: var(--mb-2);
 }
 .about__profession{
     display: block;
-    margin-bottom: var(--mb-4);
+    margin-bottom: var(--mb-2);
 }
 .about__social-icon{
     font-size: 1.4rem;
@@ -281,9 +279,6 @@ img{
 }
 
 /* ===== PORTFOLIO =====*/
-.portfolio{
-    background-color: var(--white-color);
-}
 .portfolio__container{
     justify-items: center;
     row-gap: 2rem;
@@ -303,7 +298,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255,255,255,.6);
+    background-color: rgba(255,255,255,.75);
     border-radius: .5rem;
     cursor: pointer;
     backdrop-filter: blur(10px);
@@ -394,11 +389,11 @@ img{
     body{
         margin: 0;
     }
-    .section{
+    /* .section{
         padding-top: 4rem;
-    }
+    } */
     .section-title{
-        margin-bottom: 3rem;
+        margin-bottom: var(--mb-2);
     }
     .section-title::after{
         width: 64px;
@@ -442,7 +437,7 @@ img{
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         text-align: initial;
-        padding: 4rem 0;
+        /* padding: 2rem 0; */
     }
     .about__img{
         width: 200px;
